@@ -1,0 +1,72 @@
+{
+  "title": "Pracovní Zkušenosti",
+  "jobs": [
+    {
+      "id": "1",
+      "company": {
+        "name": "FoxCom s.r.o.",
+        "url": "http://www.foxcom.eu/",
+        "location": "Teplice, Česká republika"
+      },
+      "jobTitle": "Programátor",
+      "startDate": "2022-02-01T00:00:00.000Z",
+      "endDate": "",
+      "responsibilities": [
+        "Tvorba frontendu webových aplikací",
+        "Vývoj backendu",
+        "Komunikaces s klienty a zpracovávání jejich požadavků"
+      ]
+    },
+    {
+      "id": "2",
+      "company": {
+        "name": "EDHANCE s.r.o.",
+        "url": "https://www.edhance.cz",
+        "location": "Ústí nad Labem, Česká republika"
+      },
+      "jobTitle": "Hlavní analytik",
+      "startDate": "2019-08-01T00:00:00.000Z",
+      "endDate": "2021-01-01T00:00:00.000Z",
+      "responsibilities": [
+        "Tvorba obchodních doporučení na základě analýzy uživatelských dat",
+        "Plánování a analýza rizik",
+        "Řízení, kontrola a projekce cash flow",
+        "Analýza konkurence, nastavení cenové politiky"
+      ]
+    },
+    {
+      "id": "3",
+      "company": {
+        "name": "STOSTAV s.r.o.",
+        "url": "https://www.stostav.cz/",
+        "location": "Teplice, Česká republika"
+      },
+      "jobTitle": "Jednatel",
+      "startDate": "2015-08-01T00:00:00.000Z",
+      "endDate": "2019-04-01T00:00:00.000Z",
+      "responsibilities": [
+        "Optimalizace nákladlů společnosti, vyjednávání s dodavateli",
+        "Příprava projektů, rozpočtů a nabídek, příprava výběrových řízení",
+        "Realizace stavebních zakázek, koordinace subdodavatelů, stavební dozor"
+      ]
+    },
+    {
+      "id": "4",
+      "company": {
+        "name": "O2 Česká republika",
+        "url": "https://www.stostav.cz/",
+        "location": "Praha, Česká republika"
+      },
+      "jobTitle": "Analytik strategie",
+      "startDate": "2013-03-01T00:00:00.000Z",
+      "endDate": "2015-07-01T00:00:00.000Z",
+      "responsibilities": [
+        "Analýzy tržního prostředí, příprava dlouhodobé strategie společnosti",
+        "Kvantitativní analýzy a tvorba projektových záměrů",
+        "Příprava strategie k LTE aukci kmitočtů",
+        "Příprava a realizace pilotního projektů výstavby optické infrastruktury",
+        "Optimalizace nákladlů společnosti"
+      ]
+    }
+  ]
+}
