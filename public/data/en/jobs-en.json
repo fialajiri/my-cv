@@ -1,0 +1,72 @@
+{
+  "title": "Professional Experience",
+  "jobs": [
+    {
+      "id": "1",
+      "company": {
+        "name": "FoxCom s.r.o.",
+        "url": "http://www.foxcom.eu/",
+        "location": "Teplice, Czech republic"
+      },
+      "jobTitle": "Software Engineer",
+      "startDate": "2022-02-01T00:00:00.000Z",
+      "endDate": "",
+      "responsibilities": [
+        "Fronend web development",
+        "Backend web development",
+        "Communicating with clients and processing their requests"
+      ]
+    },
+    {
+      "id": "2",
+      "company": {
+        "name": "EDHANCE s.r.o.",
+        "url": "https://www.edhance.cz",
+        "location": "Ústí nad Labem, Czech republic"
+      },
+      "jobTitle": "Chief Analyst",
+      "startDate": "2019-08-01T00:00:00.000Z",
+      "endDate": "2021-01-01T00:00:00.000Z",
+      "responsibilities": [
+        "Preparing business recommendations based on customer data analytics",
+        "Risk assessment",
+        "Cash flow management and cost structure optimization",
+        "Analysis of competition and setting of pricing policy"
+      ]
+    },
+    {
+      "id": "3",
+      "company": {
+        "name": "STOSTAV s.r.o.",
+        "url": "https://www.stostav.cz/",
+        "location": "Teplice, Czech republic"
+      },
+      "jobTitle": "Managing Director",
+      "startDate": "2015-08-01T00:00:00.000Z",
+      "endDate": "2019-04-01T00:00:00.000Z",
+      "responsibilities": [
+        "Cost structure optimization, negotiating with suppliers",
+        "Preparation of projects, budgets, and offers, preparation of tenders",
+        "Managing complex construction projects"
+      ]
+    },
+    {
+      "id": "4",
+      "company": {
+        "name": "O2 Czech republic",
+        "url": "https://www.stostav.cz/",
+        "location": "Prague, Czech republic"
+      },
+      "jobTitle": "Business Analyst",
+      "startDate": "2013-03-01T00:00:00.000Z",
+      "endDate": "2015-07-01T00:00:00.000Z",
+      "responsibilities": [
+        "Analyzes of the market environment, preparation of the company's long-term strategy",
+        "Quantitative analyzes and business case design",
+        "Strategy preparation for the LTE frequency auction",
+        "Preparation and implementation of pilot projects for the construction of optical infrastructure",
+        "Cost structure optimization"
+      ]
+    }
+  ]
+}

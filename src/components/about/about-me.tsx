@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Flex, Heading } from "@chakra-ui/react";
-import { AboutData } from "../../models/about-data";
+import { AboutData } from "../../models/profile-data";
 const iconWidth = 40;
 const iconHeight = 40;
 

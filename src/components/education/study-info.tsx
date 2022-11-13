@@ -1,6 +1,6 @@
 import { Flex, Text, Link, UnorderedList, ListItem } from "@chakra-ui/react";
 import { Study } from "../../models/education-data";
-import dictionaryCz from "../../../public/data/cs/dictionary-cz.json";
+import { useDictionary } from "../../context/dictionary-context";
 
 const StudyInfo: React.FC<Study> = ({
   university,
@@ -14,6 +14,7 @@ const StudyInfo: React.FC<Study> = ({
 }) => {
   const dateFrom = new Date(startDate).getFullYear();
   const dateTo = new Date(endDate).getFullYear();
+  const { dictionary } = useDictionary();
   return (
     <Flex direction="column" gap=".5rem">
       <Flex fontSize="xl" fontWeight="medium" gap="0.1rem">
@@ -27,17 +28,17 @@ const StudyInfo: React.FC<Study> = ({
       >{`${studyType}, ${faculty}, ${dateFrom} - ${dateTo}`}</Text>
       <UnorderedList>
         <ListItem>
-          <Text>{`${dictionaryCz.primaryField}: ${primaryField}`}</Text>
+          <Text>{`${dictionary.primaryField}: ${primaryField}`}</Text>
         </ListItem>
         {secondaryField && (
           <ListItem>
-            <Text>{`${dictionaryCz.secondaryField}: ${secondaryField}`}</Text>
+            <Text>{`${dictionary.secondaryField}: ${secondaryField}`}</Text>
           </ListItem>
         )}
 
         {thesis && (
           <ListItem>
-            <Text>{`${dictionaryCz.thesis}: ${thesis}`}</Text>
+            <Text>{`${dictionary.thesis}: ${thesis}`}</Text>
           </ListItem>
         )}
       </UnorderedList>
