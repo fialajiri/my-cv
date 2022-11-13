@@ -1,10 +1,7 @@
-import Image from "next/image";
 import { Flex, Heading } from "@chakra-ui/react";
-import { AboutData } from "../../models/profile-data";
-const iconWidth = 40;
-const iconHeight = 40;
+import { ProfileData } from "../../models/profile-data";
 
-const AboutMe: React.FC<AboutData> = ({ title, bio }) => {
+const AboutMe: React.FC<ProfileData> = ({ title, bio }) => {
   return (
     <Flex direction="column" gap="1.5rem">
       <Heading>{title}</Heading>
