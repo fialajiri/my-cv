@@ -5,5 +5,5 @@ export interface Skill {
 
 export interface SkillsData{
     title:string;
-    techs:Skill[]
+    skills:Skill[]
 }

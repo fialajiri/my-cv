@@ -1,5 +1,5 @@
 import { Flex, Text, Link, UnorderedList, ListItem } from "@chakra-ui/react";
-import dictionaryCz from '../../../public/data/dictionary-cz.json'
+import dictionaryCz from '../../../public/data/cs/dictionary-cz.json'
 import { Job } from "../../models/jobs-data";
 
 const JobDescription: React.FC<Job> = ({

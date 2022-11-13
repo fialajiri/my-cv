@@ -1,4 +1,6 @@
-import myPhoto from "../../../public/images/me-2-wide.jpg";
+
+import myPhoto from "../../../public/images/me-2e.jpg";
+import myPhoto2 from "../../../public/images/me-2.jpg";
 import Image from "next/image";
 import { Flex } from "@chakra-ui/react";
 
@@ -9,15 +11,8 @@ interface MyPhotoProps {
 
 const MyPhoto: React.FC<MyPhotoProps> = ({ width, height }) => {
   return (
-    <Flex
-      alignItems="center"
-      direction="column"
-      position="relative"
-      width="100%"
-      height="20rem"
-     
-    >
-      <Image src={myPhoto} alt="Jiri Fiala" fill style={{ objectFit: "cover" }} />
+    <Flex alignItems="center" direction="column">
+      <Image src={myPhoto} alt="Jiri Fiala" priority width={width} height={height} />
     </Flex>
   );
 };

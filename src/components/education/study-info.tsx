@@ -1,6 +1,6 @@
 import { Flex, Text, Link, UnorderedList, ListItem } from "@chakra-ui/react";
 import { Study } from "../../models/education-data";
-import dictionaryCz from "../../../public/data/dictionary-cz.json";
+import dictionaryCz from "../../../public/data/cs/dictionary-cz.json";
 
 const StudyInfo: React.FC<Study> = ({
   university,

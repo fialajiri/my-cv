@@ -15,7 +15,8 @@
     },
     {
       "icon": "/icons/map-pin-line.svg",
-      "text": "Teplice, Česká republika"
+      "text": "Teplice, Czech republic",
+      "link": { "type": "link", "url": "https://goo.gl/maps/AWeNUGAwk6qgf6aq8" }
     },
     {
       "icon": "/logos/git-logo-dark.png",
