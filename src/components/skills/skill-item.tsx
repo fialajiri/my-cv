@@ -7,7 +7,7 @@ const SkillItem: React.FC<Skill> = ({ name, proficiency }) => {
       <Text fontSize="lg" fontWeight="medium">
         {name}
       </Text>
-      <Box border="0.1rem" borderStyle="solid" borderColor="orange.300" width="100%" zIndex="">
+      <Box border="0.1rem" borderStyle="solid" borderColor="orange.300" width="100%" >
         <Box backgroundColor="orange.200" width={`${proficiency}%`} height="1rem">
           &nbsp;
         </Box>

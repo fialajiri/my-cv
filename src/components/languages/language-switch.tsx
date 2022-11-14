@@ -10,7 +10,7 @@ const LanguageSwitch: React.FC = () => {
   const { locale } = useRouter();
 
   return (
-    <Flex position="absolute" top='0.5%' right='1%' >
+    <Flex position="absolute" top='0.25%' right='0.25%' >
       {locale === "cs" && (
         <Link color="white" href="/" locale="en">
           <Image src={unionJack} alt="british flag" height={24} />

@@ -25,8 +25,8 @@
     },
     {
       "icon": "/icons/linkedin-logo.svg",
-      "text": "www.linkedin.com/in/fialajirka/",
-      "link": { "type": "link", "url": "https://www.linkedin.com/in/fialajirka/" }
+      "text": "linkedin.com/in/fialajirka",
+      "link": { "type": "link", "url": "https://www.linkedin.com/in/fialajirka" }
     },
     {
       "icon": "/icons/file-pdf.svg",

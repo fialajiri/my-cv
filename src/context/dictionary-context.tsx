@@ -1,4 +1,4 @@
-import React, { useState, Fragment, useContext } from "react";
+import React, { useState, Fragment, useContext, useEffect } from "react";
 import { useRouter } from "next/router";
 import dictionaryCz from "../../public/data/cs/dictionary-cz.json";
 import dictionaryEn from "../../public/data/en/dictionary-en.json";
@@ -24,7 +24,11 @@ interface DictionaryProviderProps {
 
 export const DictionaryProvider = ({ children }: DictionaryProviderProps) => {
   const { locale } = useRouter();
-  const [dictionary, setDictionary] = useState(locale === "cs" ? dictionaryCz : dictionaryEn);
+  const [dictionary, setDictionary] = useState(dictionaryCz);
+
+  useEffect(() => {
+    setDictionary(locale === "cs" ? dictionaryCz : dictionaryEn);
+  }, [locale]);
 
   const value = {
     dictionary,

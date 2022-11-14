@@ -26,7 +26,7 @@ const ContactItem: React.FC<ContactItemProps> = ({ icon, text, link }) => {
   }
 
   return (
-    <Flex alignItems="center" gap="1rem">
+    <Flex alignItems="center" gap={[".25rem",'1rem']}>
       <Image src={icon} width={iconWidth} height={iconHeight} alt="GitHub logo" />
       {textElement}
     </Flex>

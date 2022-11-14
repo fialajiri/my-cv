@@ -1,4 +1,3 @@
-
 import { GetStaticProps, NextPage } from "next";
 import { Box, Flex } from "@chakra-ui/react";
 import LanguageSwitch from "../components/languages/language-switch";
@@ -31,6 +30,7 @@ import Education from "../components/education/education";
 import AboutMe from "../components/about/about-me";
 import Skills from "../components/skills/Skills";
 import Projects from "../components/projects/Projects";
+import { Fragment } from "react";
 
 interface HomeProps {
   profileData: ProfileData;
@@ -51,25 +51,31 @@ const Home: NextPage<HomeProps> = ({
   projectData,
   profileData,
 }) => {
-  
   return (
     <Box backgroundColor="black">
-      
-      <Flex color="pink.900" maxWidth="80rem" margin="auto">
-        <Flex direction="column" width="50%" bg="orange.100">
-          <MyPhoto height={427} width={640} />
-          <Flex padding="2rem" direction="column" gap="4rem">
+      <Flex color="pink.900" maxWidth="100rem" margin="auto" direction={["column-reverse", "row"]}>
+        <Flex direction="column" width={["100%", "50%"]} bg="orange.100">
+          <Box display={["none", "inline"]}>
+            <MyPhoto />
+          </Box>
+          <Flex padding={["1rem", "1rem", "1.5rem", "2rem"]} direction="column" gap="4rem">
             <Skills {...techSkillsData} />
             <Projects {...projectData} />
             <Skills {...languagesSkillsData} />
           </Flex>
         </Flex>
-        <Flex padding="2rem" bg="orange.200" direction="column" width="50%" gap="4rem">
-          <LanguageSwitch />
-          <Contact {...contactData} />
-          <AboutMe {...profileData} />
-          <WorkExperiance {...jobsData} />
-          <Education {...educationData} />
+
+        <Flex bg="orange.200" direction="column" width={["100%", "50%"]}>
+          <Box display={["inline", "none"]}>
+            <MyPhoto />
+          </Box>
+          <Flex padding={["1rem", "1rem", "1.5rem", "2rem"]} paddingTop='1rem' direction="column" gap="4rem" position='relative'>
+            <LanguageSwitch />
+            <Contact {...contactData} />
+            <AboutMe {...profileData} />
+            <WorkExperiance {...jobsData} />
+            <Education {...educationData} />
+          </Flex>
         </Flex>
       </Flex>
     </Box>
