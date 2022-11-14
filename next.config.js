@@ -7,7 +7,7 @@ const nextConfig = {
     defaultLocale: "cs",
   },
   env: {
-    HOST_URL: "",
+    HOST_URL: "https://jiri-fiala.vercel.app/",
   },
 };
 

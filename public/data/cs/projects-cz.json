@@ -8,7 +8,7 @@
       "description": "Webová aplikace umožnující pořadatelům cyklistického závodu Sayfyho memorial propagaci závodu, vkládání novinek a fotografií. Frontend je vytvořený pomocí Next.js, backend je tvoří express server."
     },
     {
-      "title": "Volba pro! Teplice",
+      "title": "Volba Pro! Teplice",
       "url": "https://www.volbaproteplice.cz/",
       "git": "https://github.com/fialajiri/vpt-frontend-ts",
       "description": "Webové stránky politické strany Volba pro! Teplice. Frontend je vytvořený pomocí Next.js, backend je tvoří express server."

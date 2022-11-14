@@ -8,7 +8,7 @@
       "description": "A web application enabling the organizers of the Sayfy memorial cycling race to promote the race, and upload news and photos. The frontend is created using Next.js, the backend is created by Express framework."
     },
     {
-      "title": "Volba pro! Teplice",
+      "title": "Volba Pro! Teplice",
       "url": "https://www.volbaproteplice.cz/",
       "git": "https://github.com/fialajiri/vpt-frontend-ts",
       "description": "Political party websites Volba pro! Teplice. The frontend is created using Next.js, the backend is created by by Express framework."

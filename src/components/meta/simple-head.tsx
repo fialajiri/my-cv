@@ -12,7 +12,7 @@ const SimpleHead: React.FC<MetaData> = ({ title, description, keywords, locale, 
       <meta property="og:title" content={title} />
       <meta property="og:url" content={`${process.env.HOST_URL}/${url}`} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={`${process.env.HOST_URL}/images/og-image.jpg`} />
+      <meta property="og:image" content={`${process.env.HOST_URL}/images/me-optimized.jpg`} />
     </Head>
   );
 };
