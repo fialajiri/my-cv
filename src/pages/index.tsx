@@ -12,8 +12,8 @@ import {
   ProjectData,
   ContactData,
 } from "../models";
-import metaDataCz from '../../public/data/cs/meta-cz.json'
-import metaDataEn from '../../public/data/en/meta-en.json'
+import metaDataCz from "../../public/data/cs/meta-cz.json";
+import metaDataEn from "../../public/data/en/meta-en.json";
 import contactDataCz from "../../public/data/cs/contact-cz.json";
 import contactDataEn from "../../public/data/en/contact-en.json";
 import profileDataCz from "../../public/data/cs/profile-cz.json";
@@ -37,7 +37,7 @@ import { Fragment } from "react";
 import { MetaData } from "../models/meta-data";
 
 interface HomeProps {
-  metaData:MetaData;
+  metaData: MetaData;
   profileData: ProfileData;
   contactData: ContactData;
   educationData: EducationData;
@@ -65,6 +65,7 @@ const Home: NextPage<HomeProps> = ({
           color="pink.900"
           maxWidth="100rem"
           margin="auto"
+          minHeight="100vh"
           direction={["column-reverse", "row"]}>
           <Flex direction="column" width={["100%", "50%"]} bg="orange.100">
             <Box display={["none", "inline"]}>
@@ -77,7 +78,7 @@ const Home: NextPage<HomeProps> = ({
             </Flex>
           </Flex>
 
-          <Flex bg="orange.200" direction="column" width={["100%", "50%"]}>
+          <Flex bg="orange.200" direction="column" width={["100%", "50%"]} minHeight="100vh">
             <Box display={["inline", "none"]}>
               <MyPhoto />
             </Box>
@@ -103,7 +104,7 @@ const Home: NextPage<HomeProps> = ({
 export default Home;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const metaData = (locale === 'cs'? metaDataCz:metaDataEn) as MetaData
+  const metaData = (locale === "cs" ? metaDataCz : metaDataEn) as MetaData;
   const profileData = (locale === "cs" ? profileDataCz : profileDataEn) as ProfileData;
   const contactData = (locale === "cs" ? contactDataCz : contactDataEn) as ContactData;
   const educationData = (locale === "cs" ? educationDataCz : educationDataEn) as EducationData;
