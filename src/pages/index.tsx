@@ -1,6 +1,7 @@
 import { GetStaticProps, NextPage } from "next";
 import { Box, Flex } from "@chakra-ui/react";
 import LanguageSwitch from "../components/languages/language-switch";
+import SimpleHead from "../components/meta/simple-head";
 import Contact from "../components/contact/contact";
 import MyPhoto from "../components/photo/my-photo";
 import {
@@ -11,6 +12,8 @@ import {
   ProjectData,
   ContactData,
 } from "../models";
+import metaDataCz from '../../public/data/cs/meta-cz.json'
+import metaDataEn from '../../public/data/en/meta-en.json'
 import contactDataCz from "../../public/data/cs/contact-cz.json";
 import contactDataEn from "../../public/data/en/contact-en.json";
 import profileDataCz from "../../public/data/cs/profile-cz.json";
@@ -31,8 +34,10 @@ import AboutMe from "../components/about/about-me";
 import Skills from "../components/skills/Skills";
 import Projects from "../components/projects/Projects";
 import { Fragment } from "react";
+import { MetaData } from "../models/meta-data";
 
 interface HomeProps {
+  metaData:MetaData;
   profileData: ProfileData;
   contactData: ContactData;
   educationData: EducationData;
@@ -43,6 +48,7 @@ interface HomeProps {
 }
 
 const Home: NextPage<HomeProps> = ({
+  metaData,
   contactData,
   educationData,
   jobsData,
@@ -52,39 +58,52 @@ const Home: NextPage<HomeProps> = ({
   profileData,
 }) => {
   return (
-    <Box backgroundColor="black">
-      <Flex color="pink.900" maxWidth="100rem" margin="auto" direction={["column-reverse", "row"]}>
-        <Flex direction="column" width={["100%", "50%"]} bg="orange.100">
-          <Box display={["none", "inline"]}>
-            <MyPhoto />
-          </Box>
-          <Flex padding={["1rem", "1rem", "1.5rem", "2rem"]} direction="column" gap="4rem">
-            <Skills {...techSkillsData} />
-            <Projects {...projectData} />
-            <Skills {...languagesSkillsData} />
+    <Fragment>
+      <SimpleHead {...metaData} />
+      <Box backgroundColor="black">
+        <Flex
+          color="pink.900"
+          maxWidth="100rem"
+          margin="auto"
+          direction={["column-reverse", "row"]}>
+          <Flex direction="column" width={["100%", "50%"]} bg="orange.100">
+            <Box display={["none", "inline"]}>
+              <MyPhoto />
+            </Box>
+            <Flex padding={["1rem", "1rem", "1.5rem", "2rem"]} direction="column" gap="4rem">
+              <Skills {...techSkillsData} />
+              <Projects {...projectData} />
+              <Skills {...languagesSkillsData} />
+            </Flex>
           </Flex>
-        </Flex>
 
-        <Flex bg="orange.200" direction="column" width={["100%", "50%"]}>
-          <Box display={["inline", "none"]}>
-            <MyPhoto />
-          </Box>
-          <Flex padding={["1rem", "1rem", "1.5rem", "2rem"]} paddingTop='1rem' direction="column" gap="4rem" position='relative'>
-            <LanguageSwitch />
-            <Contact {...contactData} />
-            <AboutMe {...profileData} />
-            <WorkExperiance {...jobsData} />
-            <Education {...educationData} />
+          <Flex bg="orange.200" direction="column" width={["100%", "50%"]}>
+            <Box display={["inline", "none"]}>
+              <MyPhoto />
+            </Box>
+            <Flex
+              padding={["1rem", "1rem", "1.5rem", "2rem"]}
+              paddingTop="1rem"
+              direction="column"
+              gap="4rem"
+              position="relative">
+              <LanguageSwitch />
+              <Contact {...contactData} />
+              <AboutMe {...profileData} />
+              <WorkExperiance {...jobsData} />
+              <Education {...educationData} />
+            </Flex>
           </Flex>
         </Flex>
-      </Flex>
-    </Box>
+      </Box>
+    </Fragment>
   );
 };
 
 export default Home;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const metaData = (locale === 'cs'? metaDataCz:metaDataEn) as MetaData
   const profileData = (locale === "cs" ? profileDataCz : profileDataEn) as ProfileData;
   const contactData = (locale === "cs" ? contactDataCz : contactDataEn) as ContactData;
   const educationData = (locale === "cs" ? educationDataCz : educationDataEn) as EducationData;
@@ -96,6 +115,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const projectData = (locale === "cs" ? projectDataCz : projectDataEn) as ProjectData;
   return {
     props: {
+      metaData,
       contactData,
       educationData,
       jobsData,

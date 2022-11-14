@@ -6,6 +6,9 @@ const nextConfig = {
     locales: ["cs", "en"],
     defaultLocale: "cs",
   },
+  env: {
+    HOST_URL: "",
+  },
 };
 
 module.exports = nextConfig;
