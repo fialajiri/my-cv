@@ -14,7 +14,7 @@
       "proficiency": 60
     },
     {
-      "name": "MongoDb, SQL",
+      "name": "MongoDb, SQL, MSSQL, ORACLE",
       "proficiency": 70
     },
     {
@@ -32,6 +32,10 @@
     {
       "name": "Java",
       "proficiency": 50
+    },
+    {
+      "name":"Python",
+      "proficiency":60
     }
   ]
 }

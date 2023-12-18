@@ -2,6 +2,23 @@
   "title": "Professional Experience",
   "jobs": [
     {
+      "id": "0",
+      "company": {
+        "name": "Neit Consulting s.r.o.",
+        "url": "http://www.neit.cz/",
+        "location": "Prague, Czech republic"
+      },
+      "jobTitle": "Back-end developer",
+      "startDate": "2023-02-01T00:00:00.000Z",
+      "endDate": "",
+      "responsibilities": [
+        "Backend development",
+        "Code debugging",
+        "Code refactoring",
+        "Writing unit tests"
+      ]
+    },
+    {
       "id": "1",
       "company": {
         "name": "FoxCom s.r.o.",
@@ -10,7 +27,7 @@
       },
       "jobTitle": "Software Engineer",
       "startDate": "2022-02-01T00:00:00.000Z",
-      "endDate": "",
+      "endDate": "2023-02-14T00:00:00.000Z",
       "responsibilities": [
         "Frontend web development",
         "Backend web development",
