@@ -3,7 +3,7 @@
   "skills": [
     {
       "name": "Javascript/Typescript",
-      "proficiency": 80
+      "proficiency": 90
     },
     {
       "name": "React, Next.js",
@@ -14,7 +14,7 @@
       "proficiency": 60
     },
     {
-      "name": "MongoDb, SQL, MSSQL, ORACLE",
+      "name": "MongoDb, SQL, MSSQL, ORACLE, Postgre",
       "proficiency": 70
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "name": "Node.js, Express, Nest.js",
-      "proficiency": 80
+      "proficiency": 90
     },
     {
       "name": "C++",

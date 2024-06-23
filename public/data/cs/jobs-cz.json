@@ -2,6 +2,22 @@
   "title": "Pracovní zkušenosti",
   "jobs": [
     {
+      "id": "5",
+      "company": {
+        "name": "ApiTree s.r.o.",
+        "url": "http://www.apitree.cz/",
+        "location": "Praha, Česká republika"
+      },
+      "jobTitle": "Back-end developer",
+      "startDate": "2024-02-01T00:00:00.000Z",
+      "endDate": "",
+      "responsibilities": [
+        "Vývoj backendu v Nest.js",        
+        "Refaktoring kódu",
+        "Psaní unit testů"
+      ]
+    },
+    {
       "id": "0",
       "company": {
         "name": "Neit Consulting s.r.o.",
@@ -10,7 +26,7 @@
       },
       "jobTitle": "Back-end developer",
       "startDate": "2023-02-01T00:00:00.000Z",
-      "endDate": "",
+      "endDate": "2024-02-01T00:00:00.000",
       "responsibilities": [
         "Vývoj backendu",
         "Odstraňování chyb v kódu",
