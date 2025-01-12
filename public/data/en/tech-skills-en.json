@@ -7,15 +7,15 @@
     },
     {
       "name": "React, Next.js",
-      "proficiency": 80
+      "proficiency": 90
     },
     {
       "name": "Vue, Nuxt.js",
       "proficiency": 60
     },
     {
-      "name": "MongoDb, SQL, MSSQL, ORACLE, Postgre",
-      "proficiency": 70
+      "name": "MongoDb, SQL, MSSQL, ORACLE, Postgres",
+      "proficiency": 80
     },
     {
       "name": "HTML, CSS, SCSS",
@@ -28,11 +28,7 @@
     {
       "name": "C++",
       "proficiency": 50
-    },
-    {
-      "name": "Java",
-      "proficiency": 50
-    },
+    },   
     {
       "name":"Python",
       "proficiency":60

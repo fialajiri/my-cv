@@ -74,6 +74,7 @@ const Home: NextPage<HomeProps> = ({
             <Flex padding={["1rem", "1rem", "1.5rem", "2rem"]} direction="column" gap="4rem">
               <Skills {...techSkillsData} />
               <Projects {...projectData} />
+              <Education {...educationData} />
               <Skills {...languagesSkillsData} />
             </Flex>
           </Flex>
@@ -92,7 +93,6 @@ const Home: NextPage<HomeProps> = ({
               <Contact {...contactData} />
               <AboutMe {...profileData} />
               <WorkExperiance {...jobsData} />
-              <Education {...educationData} />
             </Flex>
           </Flex>
         </Flex>
